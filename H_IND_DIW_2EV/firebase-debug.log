@@ -1,0 +1,172 @@
+[debug] [2022-03-12T21:02:27.486Z] ----------------------------------------------------------------------
+[debug] [2022-03-12T21:02:27.489Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Carlos P\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-12T21:02:27.489Z] CLI Version:   10.2.2
+[debug] [2022-03-12T21:02:27.490Z] Platform:      win32
+[debug] [2022-03-12T21:02:27.490Z] Node Version:  v16.13.2
+[debug] [2022-03-12T21:02:27.491Z] Time:          Sat Mar 12 2022 22:02:27 GMT+0100 (hora estándar de Europa central)
+[debug] [2022-03-12T21:02:27.492Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-12T21:02:27.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-12T21:02:27.594Z] > authorizing via signed-in user (carlos.parro@campusfp.es)
+[debug] [2022-03-12T21:02:27.594Z] [iam] checking project hito-ind-2t-diw-safari for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-12T21:02:27.597Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions [none]
+[debug] [2022-03-12T21:02:27.598Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:02:28.365Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions 200
+[debug] [2022-03-12T21:02:28.366Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:02:28.369Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:02:28.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:02:28.590Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'hito-ind-2t-diw-safari'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-12T21:02:28.594Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:02:28.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:02:28.808Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[debug] [2022-03-12T21:02:28.813Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions [none]
+[debug] [2022-03-12T21:02:28.813Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-12T21:02:29.962Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions 500
+[debug] [2022-03-12T21:02:29.962Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-03-12T21:02:29.966Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-03-12T21:04:38.019Z] ----------------------------------------------------------------------
+[debug] [2022-03-12T21:04:38.022Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Carlos P\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-12T21:04:38.022Z] CLI Version:   10.2.2
+[debug] [2022-03-12T21:04:38.023Z] Platform:      win32
+[debug] [2022-03-12T21:04:38.023Z] Node Version:  v16.13.2
+[debug] [2022-03-12T21:04:38.024Z] Time:          Sat Mar 12 2022 22:04:38 GMT+0100 (hora estándar de Europa central)
+[debug] [2022-03-12T21:04:38.024Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-12T21:04:38.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-12T21:04:38.124Z] > authorizing via signed-in user (carlos.parro@campusfp.es)
+[debug] [2022-03-12T21:04:38.124Z] [iam] checking project hito-ind-2t-diw-safari for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-12T21:04:38.127Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions [none]
+[debug] [2022-03-12T21:04:38.128Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:04:38.873Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions 200
+[debug] [2022-03-12T21:04:38.873Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:04:38.877Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:04:39.136Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:04:39.137Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'hito-ind-2t-diw-safari'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-12T21:04:39.143Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:04:39.440Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:04:39.440Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[debug] [2022-03-12T21:04:39.446Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions [none]
+[debug] [2022-03-12T21:04:39.446Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-12T21:04:40.602Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions 500
+[debug] [2022-03-12T21:04:40.602Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-03-12T21:04:40.607Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-03-12T21:06:54.717Z] ----------------------------------------------------------------------
+[debug] [2022-03-12T21:06:54.720Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Carlos P\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-12T21:06:54.721Z] CLI Version:   10.2.2
+[debug] [2022-03-12T21:06:54.721Z] Platform:      win32
+[debug] [2022-03-12T21:06:54.721Z] Node Version:  v16.13.2
+[debug] [2022-03-12T21:06:54.722Z] Time:          Sat Mar 12 2022 22:06:54 GMT+0100 (hora estándar de Europa central)
+[debug] [2022-03-12T21:06:54.722Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-12T21:06:54.823Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-12T21:06:54.824Z] > authorizing via signed-in user (carlos.parro@campusfp.es)
+[debug] [2022-03-12T21:06:54.824Z] [iam] checking project hito-ind-2t-diw-safari for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-12T21:06:54.827Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions [none]
+[debug] [2022-03-12T21:06:54.827Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:06:55.590Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions 200
+[debug] [2022-03-12T21:06:55.591Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:06:55.592Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:06:55.840Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:06:55.840Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'hito-ind-2t-diw-safari'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-12T21:06:55.846Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:06:56.075Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:06:56.075Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[debug] [2022-03-12T21:06:56.080Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions [none]
+[debug] [2022-03-12T21:06:56.081Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-12T21:06:57.229Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions 500
+[debug] [2022-03-12T21:06:57.229Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-03-12T21:06:57.234Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-03-12T21:09:40.840Z] ----------------------------------------------------------------------
+[debug] [2022-03-12T21:09:40.843Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Carlos P\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-12T21:09:40.844Z] CLI Version:   10.2.2
+[debug] [2022-03-12T21:09:40.844Z] Platform:      win32
+[debug] [2022-03-12T21:09:40.844Z] Node Version:  v16.13.2
+[debug] [2022-03-12T21:09:40.845Z] Time:          Sat Mar 12 2022 22:09:40 GMT+0100 (hora estándar de Europa central)
+[debug] [2022-03-12T21:09:40.846Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-12T21:09:40.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-12T21:09:40.942Z] > authorizing via signed-in user (carlos.parro@campusfp.es)
+[debug] [2022-03-12T21:09:40.942Z] [iam] checking project hito-ind-2t-diw-safari for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-12T21:09:40.945Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions [none]
+[debug] [2022-03-12T21:09:40.945Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:09:41.746Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions 200
+[debug] [2022-03-12T21:09:41.747Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hito-ind-2t-diw-safari:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-12T21:09:41.751Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:09:41.993Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:09:41.994Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'hito-ind-2t-diw-safari'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-12T21:09:41.999Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari [none]
+[debug] [2022-03-12T21:09:42.224Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari 200
+[debug] [2022-03-12T21:09:42.224Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hito-ind-2t-diw-safari {"projectId":"hito-ind-2t-diw-safari","projectNumber":"981265057108","displayName":"hito-ind-2T-diw-Safari","name":"projects/hito-ind-2t-diw-safari","resources":{"hostingSite":"hito-ind-2t-diw-safari"},"state":"ACTIVE"}
+[debug] [2022-03-12T21:09:42.230Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions [none]
+[debug] [2022-03-12T21:09:42.230Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-12T21:09:43.367Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions 500
+[debug] [2022-03-12T21:09:43.367Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/981265057108/sites/hito-ind-2t-diw-safari/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-03-12T21:09:43.370Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

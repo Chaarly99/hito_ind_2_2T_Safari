@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HITO INDIVIDUAL DIW</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<h1><a href="index.html" id="logo">SAFARI <em>CAMPUS</em></a></h1>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li>
+								<a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Secciones</a>
+								<ul role="menu">
+									<li role="none"><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#">Semi Libertad</a>
+										<ul role="menu">
+											<li role="none"><a role="menuitem" href="#">Tierra</a></li>
+											<li role="none"><a role="menuitem" href="#">Aire</a></li>
+											<li role="none"><a role="menuitem" href="#">Agua</a></li>
+										</ul>
+									</li>
+									<li role="none"><a role="menuitem" href="#">Carnivoros</a></li>
+									<li role="none"><a role="menuitem" href="#">Aves</a></li>
+									<li role="none"><a role="menuitem" href="#">Reptiles</a></li>
+								</ul>
+							</li>
+							<li><a href="galeria.html">Galería</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+							<li><a href="horarios.html">Horarios</a></li>
+						</ul>
+					</nav>
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div>
+							<div class="col-8 col-12-narrower">
+								<div id="content">
+									<!-- Content -->
+									<article>
+										<header>
+											<h2>Pongámonos en contacto</h2>
+											<p>No dude en contactar con nosotros, estamos para ayudarle.</p>
+										</header>
+
+										<section class="col-6 col-12-narrower">
+											<form name="form1">
+												<fieldset>
+													<legend>Formulario de contacto</legend>
+													<div class="row gtr-50">
+														<div class="col-6 col-12-mobilep">
+															<label for="email"><abbr title="campo obligatorio">*</abbr>
+																Email
+																<input type="email" name="email" id="email" placeholder="Email" aria-describedby="Email" required="required" autocomplete="email"/>
+																<span id="formatoemail">Formato Email: pepito@gmail.com</span>
+																<span id="errormsg"></span>
+															</label>
+														</div>
+													</div>
+												</fieldset>
+												
+												<!-- Casillas de verificación 
+												<fieldset>
+													<legend>Seleccione las semanas en las que se encuentra
+													interesado</legend>
+													<input id="Semana1" type="checkbox" name="Semana1"
+													value="Semana1" />
+													<label for="Semana1">Semana1</label>
+													<input id="Semana2" type="checkbox" name="Semana2"
+													value="Semana2" />
+													<label for="Semana2">Semana2</label>
+												</fieldset>-->
+												<br>
+												<label for="dia">Seleccione un día de la semana</label>
+													<select id="dia" name="dia">
+													<option value="">Sin seleccionar</option>
+													<optgroup label="Laborales">
+														<option value="Lunes">Lunes</option>
+														<option value="Martes">Martes</option>
+														<option value="Miércoles">Miércoles</option>
+														<option value="Jueves">Jueves</option>
+														<option value="Viernes">Viernes</option>
+													</optgroup>
+													<optgroup label="Festivos">
+														<option value="Sabado">Sabado</option>
+														<option value="Domingo">Domingo</option>
+													</optgroup>
+												</select>
+												<br>
+												<br>
+												<div class="col-12">
+													<label for="mensaje">Mensaje</label>
+													<textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="5"></textarea>
+												</div>
+												<br>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="button alt" value="Enviar" onclick="ValidateEmail(document.form1.email)"/></li>
+														<li></li><input type="reset" class="button alt" value="Borrar" /></li>
+													</ul>
+												</div>
+												<!-- Mensaje de envío correcto 
+												<p class="StatusOK">El formulario ha sido enviado con éxito.</p>
+												Mensaje de envío incorrecto 
+												<p class="StatusERROR">Se ha producido un error en el envío del
+												formulario.</p>-->
+											</form>
+										</section>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Inicio</h3>
+							<ul class="links">
+								<li><a href="index.html">Página principal</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Imágenes</h3>
+							<ul class="links">
+								<li><a href="galeria.html">Galería</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Contáctanos</h3>
+							<ul class="links">
+								<li><a href="contacto.html">Formulario de contacto</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Horarios</h3>
+							<ul class="links">
+								<li><a href="horarios.html">Cuándo visitarnos</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+
+				<div class="container">
+					<ul class="icons">
+						<li><a href="index.html"><span class="label"><img id="logo" src="./media/SafariCamp.png"></span></a></li>
+					</ul>
+				</div>
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/safarimadrid/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/Chaarly99/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/carlos-parro-p%C3%A9rez-5907aa153/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/safarimadridoficial/" class="icon brands fa-instagram"><span class="label">Google+</span></a></li>
+					</ul>
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		</div>
+
+		<script>
+			function ValidateEmail(inputEmail)
+			{
+				var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+
+				if(!inputEmail.value.match(mailformat))
+				{
+					alert("Ha introducido un email inválido!"); 
+					document.form1.email.focus();
+					return false;
+				}
+			}
+		</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
